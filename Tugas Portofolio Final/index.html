@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Fortofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <header>
+        <div class="container">
+          <nav aria-label="Primary navigation">
+            <div class="logo" tabindex="0">MyPortfolio</div>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header> 
+
+      <main class="container" tabindex="0">
+
+      <section id="hero" class="hero" aria-label="Hero section">
+        <h1><span class="blue-text">Hello,</span> Saya <span class="white-text">Igoh!</span></h1>
+        <p>
+          Selamat datang di situs web portofolio pribadi saya! <br>
+          Saya adalah seorang <strong>Murid di SMK Plus Pelita Nusantara</strong>
+          yang senang membuat aplikasi web menggunakan <strong>HTML, CSS, dan JavaScript</strong>.
+        </p> 
+        <a href="#about" class="btn-start">START</a>
+      </section>
+
+
+        <!-- About Section -->
+        <section id="about" class="about-me" aria-label="About Me section">
+          <h1>👋 Hallo temen temen, Saya <strong>Gregorius Alvaro C</strong></h1>
+          <p>
+            Hai! Saya adalah seorang pelajar kelas 10 di SMK Plus Pelita Nusantara dengan minat yang mendalam di bidang teknologi, terutama di bagian pengembangan web. Saya gemar merancang website inovatif, mudah digunakan, dan penuh dengan kreativitas. Walaupun saya masih dalam tahap belajar, saya selalu antusias untuk meningkatkan kemampuan saya dan terus menjelajahi hal-hal baru. Saat ini, saya juga sedang mencari peluang untuk mendapatkan pengalaman dan berpartisipasi dalam proyek-proyek yang bermanfaat.
+          </p>
+
+          <p>Saya percaya bahwa teknologi adalah alat penting untuk membangun masa depan pendidikan yang lebih baik.</p>
+        </section>
+      
+      </main>
+
+        <!-- Skills Section -->
+        <section id="skills" aria-label="Skills section">
+            <h2>💡 Skills</h2>
+            <div class="skills-list" role="list">
+            <span class="skill" role="listitem">🔥 HTML5</span>
+            <span class="skill" role="listitem">🎨 CSS3</span>
+            <span class="skill" role="listitem">⚙ JavaScript</span>
+            <span class="skill" role="listitem">📱 Responsive Design</span>
+            <span class="skill" role="listitem">🛠 Git & GitHub</span>
+            <span class="skill" role="listitem">📦 Bootstrap</span>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section" aria-label="Projects section">
+          <h2>📂 Projects</h2>
+          <div class="projects-grid">
+            
+            <article class="project-card" tabindex="0">
+              <h3>📝 Tugas Perkenalan css</h3>
+              <p>Tugas ini waktu itu diberikan untuk mempelajari style css.</p>
+              <a href="https://docs.google.com/document/d/1GW_EikLpJDi4kcmEwtvK-t7zLnwornUU/edit?rtpof=true/" class="project-card-link" target="_blank" rel="noopener">🔗 Lihat Project</a>
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+              </div>
+            </article>
+
+            <article class="project-card" tabindex="0">
+              <h3>🕐 Jam Digital</h3>
+              <p>Jam digital sederhana yang dibuat dengan JavaScript.</p>
+              <a href="https://docs.google.com/document/d/1GW_EikLpJDi4kcmEwtvK-t7zLnwornUU/edit" class="project-card-link" target="_blank" rel="noopener">🔗 Lihat Project</a>
+              <div class="project-tags">
+                <span class="project-tag">JavaScript</span>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+
+
+        
+        <!-- Contact Section -->
+        <section id="contact" aria-label="Contact section">
+            <h2>📨 Contact Me </h2>
+            <form id="contact-form" novalidate>
+        
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" placeholder="Nama Anda" aria-label="Nama Anda" required />
+            <div class="error" id="name-error"></div>
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email Anda" aria-label="Email Anda" required />
+            <div class="error" id="email-error"></div>
+        
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tulis pesan Anda..." aria-label="Pesan Anda" required></textarea>
+            <div class="error" id="message-error"></div>
+        
+            <button type="submit" aria-label="Kirim pesan"> Kirim Pesan</button>
+            <p class="success-msg" id="success-message" aria-live="polite"></p>
+        
+            </form>
+        </section>
+
+        <script src="script.js"></script>
+  
+</body>
+</html>

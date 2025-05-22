@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #EFFFFF;
+    color: #EFFFFF;
+    line-height: 1.7;
+  }
+
+  /* Tambahkan ini di CSS Anda */
+  section[id] {
+    scroll-margin-top: 80px; /* Sesuaikan dengan tinggi navbar */
+  }
+
+  /* Atau lebih spesifik untuk setiap section */
+  #about, #skills, #projects, #contact {
+    scroll-margin-top: 80px;
+  }
+  
+  /* Header & Navbar */
+  header {
+    background: #182848;
+    padding: 1rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem; /* Tambahkan padding kecil jika perlu jarak sedikit */
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    font-weight: 500;
+  }
+  
+  nav ul a {
+    color: #EFFFFF;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  nav ul a.active {
+    color: #04E4D8;
+    border-bottom: 2px solid #04E4D8;
+    padding-bottom: 2px;
+  }
+
+  nav ul a:hover {
+    color: #7FEDDF;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    color: rgb(5, 19, 72);
+    text-align: center;
+    padding: 2rem;
+    background: none;
+    box-shadow: none;
+    padding: 2rem 1.5rem; /* Tetap nyaman dibaca */
+    margin: 2rem auto;
+    max-width: 850px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero .blue-text {
+    color: #0A1F33;
+  }
+
+  .hero .white-text {
+    color: #0A1F33;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #0A1F33;
+  }
+
+  .hero h1 {
+    color: #0A1F33;
+  }
+
+  .btn-start {
+    background-color: #0A1F33;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  .btn-start:hover {
+    background-color: #00cfc5;
+  }
+
+  
+  /* Section General */
+  section {
+    background: #0A1F33;
+    border: #0A1F33;
+    padding: 2rem 1.5rem;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    max-width: 850px;
+  }
+
+  p {
+    color: #0A1F33;
+  }
+  
+  h1 {
+    color: #0A1F33;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    margin-bottom: 1rem;
+    color: #0A1F33;
+  }
+
+  .about-me h3 {
+    text-align: justify;
+  }
+  
+  .about-me {
+    background: none;
+    box-shadow: none;
+    padding: 2rem 1.5rem; /* Tetap nyaman dibaca */
+    margin: 2rem auto;
+    max-width: 850px;
+  }
+
+  /* Skills */
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  
+  .skill {
+    background: #3f69bd;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: transform 0.2s;
+  }
+  
+  .skill:hover {
+    transform: scale(1.05);
+    background-color: #04E4D8;
+    color: #08314A;
+  }
+  
+  .projects-section {
+      background:  #08314A;
+      padding: 2rem 1.5rem;
+      margin: 2rem auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      max-width: 850px;
+      background: none;
+      box-shadow: none;
+  }
+
+  .projects-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #0A1F33;
+    font-weight: bold;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }  
+
+  .project-card {
+    background:  #08314A;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
+    padding: auto;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 240px;            /* Ubah ke ukuran lebih kecil */
+    max-width: 300px;           /* Maksimum 300px */
+    box-sizing: border-box;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 280px;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: #ffffff;
+  }
+
+  .project-card h3 {
+    color: #f8ffff;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .project-card p {
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    flex-grow: 1;
+  }
+
+  .project-card-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .project-card-link:hover {
+    text-decoration: underline;
+    color: #7FEDDF;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .project-tag {
+    background-color: #182848;
+    color: #ffffff;
+    padding: 4px 8px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 768px) {
+    .project-card {
+      flex: 0 1 100%;
+    }
+  }
+
+  /* Form Contact */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  input, textarea {
+    background-color: #182848;
+    color: #ffffff;
+    padding: 0.8rem;
+    border: 1.5px solid #007E91;
+    border-radius: 8px;
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #04E4D8;
+    box-shadow: 0 0 6px #04E4D8;
+    outline: none;
+  }
+  
+  button {
+    background: #182848;
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 1.05rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #7FEDDF;
+    color: #08314A;
+  }
+  
+  .error {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+  }
+  
+  .success-msg {
+    color: #3ddc91;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 2rem 0;
+    color: #A9DDE1;
+    background-color: #08314A;
+  }
+  
+  /* Responsive Menu */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .projects-list {
+      gap: 1rem;
+    }
+  }
